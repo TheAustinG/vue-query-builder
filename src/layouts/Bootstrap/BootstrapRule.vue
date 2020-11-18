@@ -66,6 +66,7 @@
         <component
           :is="rule.component"
           :value="query.value"
+          :rule="rule"
           @input="updateQuery"
         />
       </div>
