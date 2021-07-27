@@ -3043,7 +3043,7 @@ if (typeof window !== 'undefined') {
 // EXTERNAL MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
 var external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__("8bbf");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/templateLoader.js??ref--6!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/VueQueryBuilder.vue?vue&type=template&id=dbf88a86
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/templateLoader.js??ref--6!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/VueQueryBuilder.vue?vue&type=template&id=853e796a
 
 var _hoisted_1 = {
   class: "vue-query-builder"
@@ -3057,7 +3057,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     }), null, 16, ["query"])];
   })]);
 }
-// CONCATENATED MODULE: ./src/VueQueryBuilder.vue?vue&type=template&id=dbf88a86
+// CONCATENATED MODULE: ./src/VueQueryBuilder.vue?vue&type=template&id=853e796a
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.number.constructor.js
 var es_number_constructor = __webpack_require__("a9e3");
@@ -3659,11 +3659,11 @@ BootstrapGroupvue_type_script_lang_js.render = BootstrapGroupvue_type_template_i
 var defaultLabels = {
   matchType: "Match Type",
   matchTypes: [{
-    "id": "all",
-    "label": "All"
+    id: "all",
+    label: "All"
   }, {
-    "id": "any",
-    "label": "Any"
+    id: "any",
+    label: "Any"
   }],
   addRule: "Add Rule",
   removeRule: "&times;",
@@ -3672,7 +3672,7 @@ var defaultLabels = {
   textInputPlaceholder: "value"
 };
 /* harmony default export */ var VueQueryBuildervue_type_script_lang_js = ({
-  name: 'VueQueryBuilder',
+  name: "VueQueryBuilder",
   components: {
     QueryBuilderGroup: BootstrapGroup
   },
@@ -3700,41 +3700,41 @@ var defaultLabels = {
         children: []
       },
       ruleTypes: {
-        "text": {
-          operators: ['equals', 'does not equal', 'contains', 'does not contain', 'is empty', 'is not empty', 'begins with', 'ends with'],
+        text: {
+          operators: ["equals", "does not equal", "contains", "does not contain", "is empty", "is not empty", "begins with", "ends with"],
           inputType: "text",
           id: "text-field"
         },
-        "numeric": {
-          operators: ['=', '<>', '<', '<=', '>', '>='],
+        numeric: {
+          operators: ["=", "<>", "<", "<=", ">", ">="],
           inputType: "number",
           id: "number-field"
         },
-        "custom": {
+        custom: {
           operators: [],
           inputType: "text",
           id: "custom-field"
         },
-        "radio": {
+        radio: {
           operators: [],
           choices: [],
           inputType: "radio",
           id: "radio-field"
         },
-        "checkbox": {
+        checkbox: {
           operators: [],
           choices: [],
           inputType: "checkbox",
           id: "checkbox-field"
         },
-        "select": {
+        select: {
           operators: [],
           choices: [],
           inputType: "select",
           id: "select-field"
         },
         "multi-select": {
-          operators: ['='],
+          operators: ["="],
           choices: [],
           inputType: "select",
           id: "multi-select-field"
@@ -3772,14 +3772,14 @@ var defaultLabels = {
   mounted: function mounted() {
     var _this = this;
 
-    this.$watch('query', function (newQuery) {
+    this.$watch("query", function (newQuery) {
       if (JSON.stringify(newQuery) !== JSON.stringify(_this.value)) {
-        _this.$emit('input', utilities(newQuery));
+        _this.$emit("input", utilities(newQuery));
       }
     }, {
       deep: true
     });
-    this.$watch('value', function (newValue) {
+    this.$watch("value", function (newValue) {
       if (JSON.stringify(newValue) !== JSON.stringify(_this.query)) {
         _this.query = utilities(newValue);
       }
@@ -3787,8 +3787,8 @@ var defaultLabels = {
       deep: true
     });
 
-    if (typeof this.$options.propsData.value !== "undefined") {
-      this.query = Object.assign(this.query, this.$options.propsData.value);
+    if (typeof this.value !== "undefined") {
+      this.query = Object.assign(this.query, this.value);
     }
   }
 });
