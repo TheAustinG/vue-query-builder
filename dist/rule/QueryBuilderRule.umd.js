@@ -2588,12 +2588,12 @@ if (typeof window !== 'undefined') {
 // EXTERNAL MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
 var external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__("8bbf");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/templateLoader.js??ref--6!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/components/QueryBuilderRule.vue?vue&type=template&id=0c1abadd
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/templateLoader.js??ref--6!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/components/QueryBuilderRule.vue?vue&type=template&id=0230e44e
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div");
 }
-// CONCATENATED MODULE: ./src/components/QueryBuilderRule.vue?vue&type=template&id=0c1abadd
+// CONCATENATED MODULE: ./src/components/QueryBuilderRule.vue?vue&type=template&id=0230e44e
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.symbol.js
 var es_symbol = __webpack_require__("a4d3");
@@ -2678,22 +2678,22 @@ var utilities_deepClone = function deepClone(obj) {
 
 /* harmony default export */ var QueryBuilderRulevue_type_script_lang_js = ({
   // eslint-disable-next-line vue/require-prop-types
-  props: ['query', 'index', 'rule', 'labels', 'depth'],
+  props: ["query", "index", "rule", "labels", "depth"],
   computed: {
     isCustomComponent: function isCustomComponent() {
-      return this.rule.type === 'custom-component';
+      return this.rule.type === "custom-component";
     },
     selectOptions: function selectOptions() {
-      if (typeof this.rule.choices === 'undefined') {
+      if (typeof this.rule.choices === "undefined") {
         return {};
       } // Nest items to support <optgroup> if the rule's choices have
       // defined groups. Otherwise just return a single-level array
 
 
       return this.rule.choices.reduce(function (groups, item, index) {
-        var key = item['group'];
+        var key = item["group"];
 
-        if (typeof key !== 'undefined') {
+        if (typeof key !== "undefined") {
           groups[key] = groups[key] || [];
           groups[key].push(item);
         } else {
@@ -2708,7 +2708,7 @@ var utilities_deepClone = function deepClone(obj) {
     }
   },
   beforeMount: function beforeMount() {
-    if (this.rule.type === 'custom-component') {
+    if (this.rule.type === "custom-component") {
       this.$options.components[this.id] = this.rule.component;
     }
   },
@@ -2716,33 +2716,34 @@ var utilities_deepClone = function deepClone(obj) {
     var updated_query = utilities(this.query); // Set a default value for these types if one isn't provided already
 
     if (this.query.value === null) {
-      if (this.rule.inputType === 'checkbox') {
+      if (this.rule.inputType === "checkbox") {
         updated_query.value = [];
       }
 
-      if (this.rule.type === 'select') {
+      if (this.rule.type === "select") {
         updated_query.value = this.rule.choices[0].value;
       }
 
-      if (this.rule.type === 'custom-component') {
+      if (this.rule.type === "custom-component") {
         updated_query.value = null;
 
-        if (typeof this.rule.default !== 'undefined') {
+        if (typeof this.rule.default !== "undefined") {
           updated_query.value = utilities(this.rule.default);
         }
       }
 
-      this.$emit('update:query', updated_query);
+      this.$emit("update:query", updated_query);
     }
   },
   methods: {
     remove: function remove() {
-      this.$emit('child-deletion-requested', this.index);
+      this.$emit("child-deletion-requested", this.index);
     },
     updateQuery: function updateQuery(value) {
+      console.debug("Update query");
       var updated_query = utilities(this.query);
       updated_query.value = value;
-      this.$emit('update:query', updated_query);
+      this.$emit("update:query", updated_query);
     }
   }
 });

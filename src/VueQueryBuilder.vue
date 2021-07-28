@@ -1,14 +1,14 @@
 <template>
   <div class="vue-query-builder">
     <slot v-bind="vqbProps">
-      <query-builder-group v-bind="vqbProps" :query.sync="query" />
+      <query-builder-group v-bind="vqbProps" v-model:query="query" />
     </slot>
   </div>
 </template>
 
 <script>
-/* eslint-disable vue/require-default-prop */
-import QueryBuilderGroup from "./layouts/Bootstrap/BootstrapGroup.vue";
+import QueryBuilderGroup from "./layouts/Bootstrap5/Bootstrap5Group";
+import QueryBuilderRule from "./layouts/Bootstrap5/Bootstrap5Rule";
 import deepClone from "./utilities.js";
 
 var defaultLabels = {
@@ -45,6 +45,14 @@ export default {
       validator: function (value) {
         return value >= 1;
       },
+    },
+    groupComponent: {
+      type: Object,
+      default: QueryBuilderGroup,
+    },
+    ruleComponent: {
+      type: Object,
+      default: QueryBuilderRule,
     },
     value: Object,
   },
@@ -115,6 +123,7 @@ export default {
 
     mergedRules() {
       var mergedRules = [];
+      // eslint-disable-next-line @typescript-eslint/no-this-alias
       var vm = this;
 
       vm.rules.forEach(function (rule) {
@@ -136,6 +145,8 @@ export default {
         ruleTypes: this.ruleTypes,
         rules: this.mergedRules,
         labels: this.mergedLabels,
+        groupComponent: this.groupComponent,
+        ruleComponent: this.ruleComponent,
       };
     },
   },
