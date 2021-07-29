@@ -63,12 +63,7 @@
 
       <!-- Custom component input -->
       <div v-if="isCustomComponent" class="col-auto vqb-custom-component-wrap">
-        <component
-          :is="rule.component"
-          :value="query.value"
-          :rule="rule"
-          @input="updateQuery"
-        />
+        <component :is="rule.component" v-model="query.value" :rule="rule" />
       </div>
 
       <!-- Checkbox input -->
