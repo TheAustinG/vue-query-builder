@@ -34,6 +34,19 @@ export default {
       selectedRule: this.rules[0],
     };
   },
+  watch: {
+    rules: function () {
+      if (this.rules) {
+        this.selectedRule = this.rules[0];
+      }
+    },
+  },
+  computed: {
+    selectedRuleId: function () {
+      if (this.selectedRule) return this.selectedRule.id;
+      else return null;
+    },
+  },
 
   methods: {
     ruleById(ruleId) {

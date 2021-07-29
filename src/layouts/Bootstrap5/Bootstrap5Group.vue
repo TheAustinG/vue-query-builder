@@ -20,7 +20,6 @@
           <select
             id="vqb-match-type"
             v-model="query.logicalOperator"
-            @input="updateLogicalOperator"
             class="form-control"
           >
             <option
@@ -40,7 +39,7 @@
         <div class="row gy-2 gx-3 align-items-center">
           <div class="col-auto">
             <select
-              :value="selectedRule.id"
+              :value="selectedRuleId"
               @input="updateRule"
               class="form-control mr-2"
             >
@@ -85,17 +84,7 @@ export default {
   components: { QueryBuilderChildren },
 
   extends: QueryBuilderGroup,
-  methods: {
-    updateRule: function (x) {
-      console.log("Update rule", x);
-      const id = x.target.selectedOptions[0].value;
-
-      this.selectedRule = this.ruleById(id);
-    },
-    updateLogicalOperator(x) {
-      console.log("Update logical operator", x);
-    },
-  },
+  methods: {},
 };
 </script>
 
