@@ -16,7 +16,7 @@
 
       <div class="col-auto" v-if="typeof rule.operands !== 'undefined'">
         <!-- List of operands (optional) -->
-        <select v-model="query.operand" class="form-control mr-2">
+        <select v-model="query.operand" class="form-select mr-2">
           <option v-for="operand in rule.operands" :key="operand">
             {{ operand }}
           </option>
@@ -30,7 +30,7 @@
           typeof rule.operators !== 'undefined' && rule.operators.length > 1
         "
       >
-        <select v-model="query.operator" class="form-control mr-2">
+        <select v-model="query.operator" class="form-select mr-2">
           <option
             v-for="operator in rule.operators"
             :key="operator"
@@ -128,7 +128,7 @@
       >
         <select
           v-model="query.value"
-          class="form-control"
+          class="form-select"
           :multiple="rule.type === 'multi-select'"
         >
           <option
@@ -148,7 +148,7 @@
       >
         <select
           v-model="query.value"
-          class="form-control"
+          class="form-select"
           :multiple="rule.type === 'multi-select'"
         >
           <optgroup
