@@ -20,7 +20,7 @@
           <select
             id="vqb-match-type"
             v-model="query.logicalOperator"
-            class="form-control"
+            class="form-select"
           >
             <option
               v-for="label in labels.matchTypes"
@@ -41,7 +41,7 @@
             <select
               :value="selectedRuleId"
               @input="updateRule"
-              class="form-control mr-2"
+              class="form-select mr-2"
             >
               <option v-for="rule in rules" :key="rule.id" :value="rule.id">
                 {{ rule.label }}
