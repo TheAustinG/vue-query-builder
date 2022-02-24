@@ -1,7 +1,7 @@
 <template>
   <!-- eslint-disable vue/no-v-html -->
   <div class="vqb-rule card">
-    <div class="row gy-2 gx-3 align-items-center">
+    <div class="row gy-2 gx-3 align-items-center card-body">
       
 
       <label class="col-auto">{{ rule.label }}</label>
