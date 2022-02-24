@@ -3,16 +3,8 @@
   <div class="vqb-group card" :class="'depth-' + depth.toString()">
     <div class="vqb-group-heading card-header">
       <div class="match-type-container row gy-2 gx-3 align-items-center">
-        <div class="col-auto" v-if="depth > 1">
-          <button
-            type="button"
-            class="close ml-auto btn"
-            @click="remove"
-            v-html="labels.removeGroup"
-          ></button>
-        </div>
         <div class="col-auto">
-          <label class="mr-2" for="vqb-match-type">
+          <label class="me-2" for="vqb-match-type">
             {{ labels.matchType }}
           </label>
         </div>
@@ -31,6 +23,14 @@
             </option>
           </select>
         </div>
+        <div class="col-auto" v-if="depth > 1">
+          <button
+            type="button"
+            class="close ms-auto btn"
+            @click="remove"
+            v-html="labels.removeGroup"
+          ></button>
+        </div>
       </div>
     </div>
 
@@ -41,7 +41,7 @@
             <select
               :value="selectedRuleId"
               @input="updateRule"
-              class="form-select mr-2"
+              class="form-select me-2"
             >
               <option v-for="rule in rules" :key="rule.id" :value="rule.id">
                 {{ rule.label }}
@@ -51,7 +51,7 @@
           <div class="col-auto">
             <button
               type="button"
-              class="btn btn-secondary mr-2"
+              class="btn btn-secondary me-2"
               @click="addRule"
             >
               {{ labels.addRule }}

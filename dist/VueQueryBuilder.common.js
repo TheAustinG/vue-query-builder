@@ -789,17 +789,6 @@ module.exports = {
 
 /***/ }),
 
-/***/ "5bcc":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _node_modules_vue_cli_service_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_v16_dist_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_v16_dist_index_js_ref_0_1_Bootstrap5Group_vue_vue_type_style_index_0_id_277aecdb_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("6fea");
-/* harmony import */ var _node_modules_vue_cli_service_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_v16_dist_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_v16_dist_index_js_ref_0_1_Bootstrap5Group_vue_vue_type_style_index_0_id_277aecdb_lang_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_cli_service_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_loader_v16_dist_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_v16_dist_index_js_ref_0_1_Bootstrap5Group_vue_vue_type_style_index_0_id_277aecdb_lang_css__WEBPACK_IMPORTED_MODULE_0__);
-/* unused harmony reexport * */
-
-
-/***/ }),
-
 /***/ "5c6c":
 /***/ (function(module, exports) {
 
@@ -938,6 +927,13 @@ module.exports = function (originalArray, length) {
 
 /***/ }),
 
+/***/ "67f3":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
 /***/ "69f3":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1059,10 +1055,14 @@ var TEMPLATE = String(String).split('String');
 
 /***/ }),
 
-/***/ "6fea":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ "7085":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-// extracted by mini-css-extract-plugin
+"use strict";
+/* harmony import */ var _node_modules_vue_cli_service_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_cli_service_node_modules_vue_loader_v16_dist_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_cli_service_node_modules_vue_loader_v16_dist_index_js_ref_0_1_Bootstrap5Group_vue_vue_type_style_index_0_id_2954fae9_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("67f3");
+/* harmony import */ var _node_modules_vue_cli_service_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_cli_service_node_modules_vue_loader_v16_dist_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_cli_service_node_modules_vue_loader_v16_dist_index_js_ref_0_1_Bootstrap5Group_vue_vue_type_style_index_0_id_2954fae9_lang_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_cli_service_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_6_oneOf_1_1_node_modules_vue_cli_service_node_modules_vue_loader_v16_dist_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_cli_service_node_modules_vue_loader_v16_dist_index_js_ref_0_1_Bootstrap5Group_vue_vue_type_style_index_0_id_2954fae9_lang_css__WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+
 
 /***/ }),
 
@@ -2679,6 +2679,25 @@ $({ target: 'Array', proto: true, forced: !HAS_SPECIES_SUPPORT }, {
 
 /***/ }),
 
+/***/ "d959":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+// runtime helper for setting properties on components
+// in a tree-shakable way
+exports.default = (sfc, props) => {
+    const target = sfc.__vccOpts || sfc;
+    for (const [key, val] of props) {
+        target[key] = val;
+    }
+    return target;
+};
+
+
+/***/ }),
+
 /***/ "da84":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3044,7 +3063,7 @@ if (typeof window !== 'undefined') {
 // EXTERNAL MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
 var external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__("8bbf");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/vue-loader-v16/dist/templateLoader.js??ref--6!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader-v16/dist??ref--0-1!./src/VueQueryBuilder.vue?vue&type=template&id=56f33376
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/templateLoader.js??ref--6!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/VueQueryBuilder.vue?vue&type=template&id=56f33376
 
 var _hoisted_1 = {
   class: "vue-query-builder"
@@ -3078,28 +3097,28 @@ var es_object_to_string = __webpack_require__("d3b7");
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.regexp.to-string.js
 var es_regexp_to_string = __webpack_require__("25f0");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/vue-loader-v16/dist/templateLoader.js??ref--6!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader-v16/dist??ref--0-1!./src/layouts/Bootstrap5/Bootstrap5Group.vue?vue&type=template&id=277aecdb
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/templateLoader.js??ref--6!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/layouts/Bootstrap5/Bootstrap5Group.vue?vue&type=template&id=2954fae9
 
 
 
-var Bootstrap5Groupvue_type_template_id_277aecdb_hoisted_1 = {
+var Bootstrap5Groupvue_type_template_id_2954fae9_hoisted_1 = {
   class: "vqb-group-heading card-header"
 };
 var _hoisted_2 = {
   class: "match-type-container row gy-2 gx-3 align-items-center"
 };
 var _hoisted_3 = {
-  key: 0,
   class: "col-auto"
 };
 var _hoisted_4 = {
-  class: "col-auto"
-};
-var _hoisted_5 = {
-  class: "mr-2",
+  class: "me-2",
   for: "vqb-match-type"
 };
+var _hoisted_5 = {
+  class: "col-auto"
+};
 var _hoisted_6 = {
+  key: 0,
   class: "col-auto"
 };
 var _hoisted_7 = {
@@ -3120,21 +3139,14 @@ var _hoisted_11 = {
 var _hoisted_12 = {
   class: "col-auto"
 };
-function Bootstrap5Groupvue_type_template_id_277aecdb_render(_ctx, _cache, $props, $setup, $data, $options) {
+function Bootstrap5Groupvue_type_template_id_2954fae9_render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_query_builder_children = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("query-builder-children");
 
   return Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div", {
     class: ["vqb-group card", 'depth-' + _ctx.depth.toString()]
-  }, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("div", Bootstrap5Groupvue_type_template_id_277aecdb_hoisted_1, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("div", _hoisted_2, [_ctx.depth > 1 ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div", _hoisted_3, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("button", {
-    type: "button",
-    class: "close ml-auto btn",
-    onClick: _cache[1] || (_cache[1] = function () {
-      return _ctx.remove && _ctx.remove.apply(_ctx, arguments);
-    }),
-    innerHTML: _ctx.labels.removeGroup
-  }, null, 8, ["innerHTML"])])) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("div", _hoisted_4, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("label", _hoisted_5, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])(_ctx.labels.matchType), 1)]), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("div", _hoisted_6, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["withDirectives"])(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("select", {
+  }, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("div", Bootstrap5Groupvue_type_template_id_2954fae9_hoisted_1, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("div", _hoisted_2, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("div", _hoisted_3, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("label", _hoisted_4, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])(_ctx.labels.matchType), 1)]), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("div", _hoisted_5, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["withDirectives"])(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("select", {
     id: "vqb-match-type",
-    "onUpdate:modelValue": _cache[2] || (_cache[2] = function ($event) {
+    "onUpdate:modelValue": _cache[1] || (_cache[1] = function ($event) {
       return _ctx.query.logicalOperator = $event;
     }),
     class: "form-select"
@@ -3143,12 +3155,19 @@ function Bootstrap5Groupvue_type_template_id_277aecdb_render(_ctx, _cache, $prop
       key: label.id,
       value: label.id
     }, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])(label.label), 9, ["value"]);
-  }), 128))], 512), [[external_commonjs_vue_commonjs2_vue_root_Vue_["vModelSelect"], _ctx.query.logicalOperator]])])])]), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("div", _hoisted_7, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("div", _hoisted_8, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("div", _hoisted_9, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("div", _hoisted_10, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("select", {
+  }), 128))], 512), [[external_commonjs_vue_commonjs2_vue_root_Vue_["vModelSelect"], _ctx.query.logicalOperator]])]), _ctx.depth > 1 ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div", _hoisted_6, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("button", {
+    type: "button",
+    class: "close ms-auto btn",
+    onClick: _cache[2] || (_cache[2] = function () {
+      return _ctx.remove && _ctx.remove.apply(_ctx, arguments);
+    }),
+    innerHTML: _ctx.labels.removeGroup
+  }, null, 8, ["innerHTML"])])) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true)])]), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("div", _hoisted_7, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("div", _hoisted_8, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("div", _hoisted_9, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("div", _hoisted_10, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("select", {
     value: _ctx.selectedRuleId,
     onInput: _cache[3] || (_cache[3] = function () {
       return _ctx.updateRule && _ctx.updateRule.apply(_ctx, arguments);
     }),
-    class: "form-select mr-2"
+    class: "form-select me-2"
   }, [(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(true), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])(external_commonjs_vue_commonjs2_vue_root_Vue_["Fragment"], null, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["renderList"])(_ctx.rules, function (rule) {
     return Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("option", {
       key: rule.id,
@@ -3156,7 +3175,7 @@ function Bootstrap5Groupvue_type_template_id_277aecdb_render(_ctx, _cache, $prop
     }, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])(rule.label), 9, ["value"]);
   }), 128))], 40, ["value"])]), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("div", _hoisted_11, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("button", {
     type: "button",
-    class: "btn btn-secondary mr-2",
+    class: "btn btn-secondary me-2",
     onClick: _cache[4] || (_cache[4] = function () {
       return _ctx.addRule && _ctx.addRule.apply(_ctx, arguments);
     })
@@ -3169,9 +3188,9 @@ function Bootstrap5Groupvue_type_template_id_277aecdb_render(_ctx, _cache, $prop
     })
   }, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])(_ctx.labels.addGroup), 1)) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true)])])]), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(_component_query_builder_children, _ctx.$props, null, 16)])], 2);
 }
-// CONCATENATED MODULE: ./src/layouts/Bootstrap5/Bootstrap5Group.vue?vue&type=template&id=277aecdb
+// CONCATENATED MODULE: ./src/layouts/Bootstrap5/Bootstrap5Group.vue?vue&type=template&id=2954fae9
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/vue-loader-v16/dist/templateLoader.js??ref--6!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader-v16/dist??ref--0-1!./src/components/QueryBuilderGroup.vue?vue&type=template&id=406b0c84
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/templateLoader.js??ref--6!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/components/QueryBuilderGroup.vue?vue&type=template&id=406b0c84
 
 function QueryBuilderGroupvue_type_template_id_406b0c84_render(_ctx, _cache, $props, $setup, $data, $options) {
   return Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div");
@@ -3257,7 +3276,7 @@ var utilities_deepClone = function deepClone(obj) {
 };
 
 /* harmony default export */ var utilities = (utilities_deepClone);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/vue-loader-v16/dist/templateLoader.js??ref--6!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader-v16/dist??ref--0-1!./src/components/QueryBuilderChildren.vue?vue&type=template&id=a691307c
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/templateLoader.js??ref--6!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/components/QueryBuilderChildren.vue?vue&type=template&id=a691307c
 
 var QueryBuilderChildrenvue_type_template_id_a691307c_hoisted_1 = {
   class: "vqb-children"
@@ -3286,7 +3305,7 @@ function QueryBuilderChildrenvue_type_template_id_a691307c_render(_ctx, _cache, 
 }
 // CONCATENATED MODULE: ./src/components/QueryBuilderChildren.vue?vue&type=template&id=a691307c
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader-v16/dist??ref--0-1!./src/components/QueryBuilderChildren.vue?vue&type=script&lang=js
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/components/QueryBuilderChildren.vue?vue&type=script&lang=js
 /* harmony default export */ var QueryBuilderChildrenvue_type_script_lang_js = ({
   // eslint-disable-next-line vue/require-prop-types
   props: ["query", "ruleTypes", "rules", "maxDepth", "labels", "depth", "groupComponent", "ruleComponent"],
@@ -3298,14 +3317,20 @@ function QueryBuilderChildrenvue_type_template_id_a691307c_render(_ctx, _cache, 
 });
 // CONCATENATED MODULE: ./src/components/QueryBuilderChildren.vue?vue&type=script&lang=js
  
+// EXTERNAL MODULE: ./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/exportHelper.js
+var exportHelper = __webpack_require__("d959");
+var exportHelper_default = /*#__PURE__*/__webpack_require__.n(exportHelper);
+
 // CONCATENATED MODULE: ./src/components/QueryBuilderChildren.vue
 
 
 
-QueryBuilderChildrenvue_type_script_lang_js.render = QueryBuilderChildrenvue_type_template_id_a691307c_render
 
-/* harmony default export */ var QueryBuilderChildren = (QueryBuilderChildrenvue_type_script_lang_js);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader-v16/dist??ref--0-1!./src/components/QueryBuilderGroup.vue?vue&type=script&lang=js
+
+const __exports__ = /*#__PURE__*/exportHelper_default()(QueryBuilderChildrenvue_type_script_lang_js, [['render',QueryBuilderChildrenvue_type_template_id_a691307c_render]])
+
+/* harmony default export */ var QueryBuilderChildren = (__exports__);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/components/QueryBuilderGroup.vue?vue&type=script&lang=js
 
 
 
@@ -3414,10 +3439,12 @@ QueryBuilderChildrenvue_type_script_lang_js.render = QueryBuilderChildrenvue_typ
 
 
 
-QueryBuilderGroupvue_type_script_lang_js.render = QueryBuilderGroupvue_type_template_id_406b0c84_render
 
-/* harmony default export */ var QueryBuilderGroup = (QueryBuilderGroupvue_type_script_lang_js);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader-v16/dist??ref--0-1!./src/layouts/Bootstrap5/Bootstrap5Group.vue?vue&type=script&lang=js
+
+const QueryBuilderGroup_exports_ = /*#__PURE__*/exportHelper_default()(QueryBuilderGroupvue_type_script_lang_js, [['render',QueryBuilderGroupvue_type_template_id_406b0c84_render]])
+
+/* harmony default export */ var QueryBuilderGroup = (QueryBuilderGroup_exports_);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/layouts/Bootstrap5/Bootstrap5Group.vue?vue&type=script&lang=js
 
 
 /* harmony default export */ var Bootstrap5Groupvue_type_script_lang_js = ({
@@ -3430,8 +3457,8 @@ QueryBuilderGroupvue_type_script_lang_js.render = QueryBuilderGroupvue_type_temp
 });
 // CONCATENATED MODULE: ./src/layouts/Bootstrap5/Bootstrap5Group.vue?vue&type=script&lang=js
  
-// EXTERNAL MODULE: ./src/layouts/Bootstrap5/Bootstrap5Group.vue?vue&type=style&index=0&id=277aecdb&lang=css
-var Bootstrap5Groupvue_type_style_index_0_id_277aecdb_lang_css = __webpack_require__("5bcc");
+// EXTERNAL MODULE: ./src/layouts/Bootstrap5/Bootstrap5Group.vue?vue&type=style&index=0&id=2954fae9&lang=css
+var Bootstrap5Groupvue_type_style_index_0_id_2954fae9_lang_css = __webpack_require__("7085");
 
 // CONCATENATED MODULE: ./src/layouts/Bootstrap5/Bootstrap5Group.vue
 
@@ -3439,122 +3466,117 @@ var Bootstrap5Groupvue_type_style_index_0_id_277aecdb_lang_css = __webpack_requi
 
 
 
-Bootstrap5Groupvue_type_script_lang_js.render = Bootstrap5Groupvue_type_template_id_277aecdb_render
 
-/* harmony default export */ var Bootstrap5Group = (Bootstrap5Groupvue_type_script_lang_js);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/vue-loader-v16/dist/templateLoader.js??ref--6!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader-v16/dist??ref--0-1!./src/layouts/Bootstrap5/Bootstrap5Rule.vue?vue&type=template&id=80de1a5c
 
-var Bootstrap5Rulevue_type_template_id_80de1a5c_hoisted_1 = {
+const Bootstrap5Group_exports_ = /*#__PURE__*/exportHelper_default()(Bootstrap5Groupvue_type_script_lang_js, [['render',Bootstrap5Groupvue_type_template_id_2954fae9_render]])
+
+/* harmony default export */ var Bootstrap5Group = (Bootstrap5Group_exports_);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/templateLoader.js??ref--6!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/layouts/Bootstrap5/Bootstrap5Rule.vue?vue&type=template&id=f3996682
+
+var Bootstrap5Rulevue_type_template_id_f3996682_hoisted_1 = {
   class: "vqb-rule card"
 };
-var Bootstrap5Rulevue_type_template_id_80de1a5c_hoisted_2 = {
+var Bootstrap5Rulevue_type_template_id_f3996682_hoisted_2 = {
   class: "row gy-2 gx-3 align-items-center"
 };
-var Bootstrap5Rulevue_type_template_id_80de1a5c_hoisted_3 = {
-  class: "col-auto d-flex"
-};
-var Bootstrap5Rulevue_type_template_id_80de1a5c_hoisted_4 = {
+var Bootstrap5Rulevue_type_template_id_f3996682_hoisted_3 = {
   class: "col-auto"
 };
-var Bootstrap5Rulevue_type_template_id_80de1a5c_hoisted_5 = {
+var Bootstrap5Rulevue_type_template_id_f3996682_hoisted_4 = {
   key: 0,
   class: "col-auto"
 };
-var Bootstrap5Rulevue_type_template_id_80de1a5c_hoisted_6 = {
+var Bootstrap5Rulevue_type_template_id_f3996682_hoisted_5 = {
   key: 1,
   class: "col-auto"
 };
-var Bootstrap5Rulevue_type_template_id_80de1a5c_hoisted_7 = {
+var Bootstrap5Rulevue_type_template_id_f3996682_hoisted_6 = {
   key: 2,
   class: "col-auto"
 };
-var Bootstrap5Rulevue_type_template_id_80de1a5c_hoisted_8 = {
+var Bootstrap5Rulevue_type_template_id_f3996682_hoisted_7 = {
   key: 3,
   class: "col-auto"
 };
-var Bootstrap5Rulevue_type_template_id_80de1a5c_hoisted_9 = {
+var Bootstrap5Rulevue_type_template_id_f3996682_hoisted_8 = {
   key: 4,
   class: "col-auto"
 };
-var Bootstrap5Rulevue_type_template_id_80de1a5c_hoisted_10 = {
+var Bootstrap5Rulevue_type_template_id_f3996682_hoisted_9 = {
   key: 5,
   class: "col-auto vqb-custom-component-wrap"
 };
-var Bootstrap5Rulevue_type_template_id_80de1a5c_hoisted_11 = {
+var Bootstrap5Rulevue_type_template_id_f3996682_hoisted_10 = {
   key: 6,
   class: "col-auto"
 };
-var Bootstrap5Rulevue_type_template_id_80de1a5c_hoisted_12 = {
+var Bootstrap5Rulevue_type_template_id_f3996682_hoisted_11 = {
   key: 7,
   class: "col-auto"
 };
-var _hoisted_13 = {
+var Bootstrap5Rulevue_type_template_id_f3996682_hoisted_12 = {
   key: 8,
   class: "col-auto"
 };
-var _hoisted_14 = {
+var _hoisted_13 = {
   key: 9,
   class: "col-auto"
 };
-function Bootstrap5Rulevue_type_template_id_80de1a5c_render(_ctx, _cache, $props, $setup, $data, $options) {
-  return Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div", Bootstrap5Rulevue_type_template_id_80de1a5c_hoisted_1, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("div", Bootstrap5Rulevue_type_template_id_80de1a5c_hoisted_2, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("div", Bootstrap5Rulevue_type_template_id_80de1a5c_hoisted_3, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("button", {
-    type: "button",
-    class: "close ml-auto btn",
-    onClick: _cache[1] || (_cache[1] = function () {
-      return _ctx.remove && _ctx.remove.apply(_ctx, arguments);
-    }),
-    innerHTML: _ctx.labels.removeRule
-  }, null, 8, ["innerHTML"])]), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("label", Bootstrap5Rulevue_type_template_id_80de1a5c_hoisted_4, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])(_ctx.rule.label), 1), typeof _ctx.rule.operands !== 'undefined' ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div", Bootstrap5Rulevue_type_template_id_80de1a5c_hoisted_5, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["withDirectives"])(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("select", {
-    "onUpdate:modelValue": _cache[2] || (_cache[2] = function ($event) {
+var _hoisted_14 = {
+  class: "col-auto d-flex"
+};
+function Bootstrap5Rulevue_type_template_id_f3996682_render(_ctx, _cache, $props, $setup, $data, $options) {
+  return Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div", Bootstrap5Rulevue_type_template_id_f3996682_hoisted_1, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("div", Bootstrap5Rulevue_type_template_id_f3996682_hoisted_2, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("label", Bootstrap5Rulevue_type_template_id_f3996682_hoisted_3, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])(_ctx.rule.label), 1), typeof _ctx.rule.operands !== 'undefined' ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div", Bootstrap5Rulevue_type_template_id_f3996682_hoisted_4, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["withDirectives"])(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("select", {
+    "onUpdate:modelValue": _cache[1] || (_cache[1] = function ($event) {
       return _ctx.query.operand = $event;
     }),
-    class: "form-select mr-2"
+    class: "form-select me-2"
   }, [(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(true), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])(external_commonjs_vue_commonjs2_vue_root_Vue_["Fragment"], null, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["renderList"])(_ctx.rule.operands, function (operand) {
     return Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("option", {
       key: operand
     }, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])(operand), 1);
-  }), 128))], 512), [[external_commonjs_vue_commonjs2_vue_root_Vue_["vModelSelect"], _ctx.query.operand]])])) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), typeof _ctx.rule.operators !== 'undefined' && _ctx.rule.operators.length > 1 ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div", Bootstrap5Rulevue_type_template_id_80de1a5c_hoisted_6, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["withDirectives"])(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("select", {
-    "onUpdate:modelValue": _cache[3] || (_cache[3] = function ($event) {
+  }), 128))], 512), [[external_commonjs_vue_commonjs2_vue_root_Vue_["vModelSelect"], _ctx.query.operand]])])) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), typeof _ctx.rule.operators !== 'undefined' && _ctx.rule.operators.length > 1 ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div", Bootstrap5Rulevue_type_template_id_f3996682_hoisted_5, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["withDirectives"])(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("select", {
+    "onUpdate:modelValue": _cache[2] || (_cache[2] = function ($event) {
       return _ctx.query.operator = $event;
     }),
-    class: "form-select mr-2"
+    class: "form-select me-2"
   }, [(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(true), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])(external_commonjs_vue_commonjs2_vue_root_Vue_["Fragment"], null, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["renderList"])(_ctx.rule.operators, function (operator) {
     return Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("option", {
       key: operator,
       value: operator
     }, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])(operator), 9, ["value"]);
-  }), 128))], 512), [[external_commonjs_vue_commonjs2_vue_root_Vue_["vModelSelect"], _ctx.query.operator]])])) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), _ctx.rule.inputType === 'text' ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div", Bootstrap5Rulevue_type_template_id_80de1a5c_hoisted_7, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["withDirectives"])(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("input", {
-    "onUpdate:modelValue": _cache[4] || (_cache[4] = function ($event) {
+  }), 128))], 512), [[external_commonjs_vue_commonjs2_vue_root_Vue_["vModelSelect"], _ctx.query.operator]])])) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), _ctx.rule.inputType === 'text' ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div", Bootstrap5Rulevue_type_template_id_f3996682_hoisted_6, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["withDirectives"])(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("input", {
+    "onUpdate:modelValue": _cache[3] || (_cache[3] = function ($event) {
       return _ctx.query.value = $event;
     }),
     class: "form-control",
     type: "text",
     placeholder: _ctx.labels.textInputPlaceholder
-  }, null, 8, ["placeholder"]), [[external_commonjs_vue_commonjs2_vue_root_Vue_["vModelText"], _ctx.query.value]])])) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), _ctx.rule.inputType === 'number' ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div", Bootstrap5Rulevue_type_template_id_80de1a5c_hoisted_8, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["withDirectives"])(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("input", {
-    "onUpdate:modelValue": _cache[5] || (_cache[5] = function ($event) {
+  }, null, 8, ["placeholder"]), [[external_commonjs_vue_commonjs2_vue_root_Vue_["vModelText"], _ctx.query.value]])])) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), _ctx.rule.inputType === 'number' ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div", Bootstrap5Rulevue_type_template_id_f3996682_hoisted_7, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["withDirectives"])(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("input", {
+    "onUpdate:modelValue": _cache[4] || (_cache[4] = function ($event) {
       return _ctx.query.value = $event;
     }),
     class: "form-control",
     type: "number"
-  }, null, 512), [[external_commonjs_vue_commonjs2_vue_root_Vue_["vModelText"], _ctx.query.value]])])) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), _ctx.rule.inputType === 'date' ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div", Bootstrap5Rulevue_type_template_id_80de1a5c_hoisted_9, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["withDirectives"])(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("input", {
-    "onUpdate:modelValue": _cache[6] || (_cache[6] = function ($event) {
+  }, null, 512), [[external_commonjs_vue_commonjs2_vue_root_Vue_["vModelText"], _ctx.query.value]])])) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), _ctx.rule.inputType === 'date' ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div", Bootstrap5Rulevue_type_template_id_f3996682_hoisted_8, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["withDirectives"])(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("input", {
+    "onUpdate:modelValue": _cache[5] || (_cache[5] = function ($event) {
       return _ctx.query.value = $event;
     }),
     class: "form-control",
     type: "date"
-  }, null, 512), [[external_commonjs_vue_commonjs2_vue_root_Vue_["vModelText"], _ctx.query.value]])])) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), _ctx.isCustomComponent ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div", Bootstrap5Rulevue_type_template_id_80de1a5c_hoisted_10, [(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveDynamicComponent"])(_ctx.rule.component), {
+  }, null, 512), [[external_commonjs_vue_commonjs2_vue_root_Vue_["vModelText"], _ctx.query.value]])])) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), _ctx.isCustomComponent ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div", Bootstrap5Rulevue_type_template_id_f3996682_hoisted_9, [(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveDynamicComponent"])(_ctx.rule.component), {
     modelValue: _ctx.query.value,
-    "onUpdate:modelValue": _cache[7] || (_cache[7] = function ($event) {
+    "onUpdate:modelValue": _cache[6] || (_cache[6] = function ($event) {
       return _ctx.query.value = $event;
     }),
     rule: _ctx.rule
-  }, null, 8, ["modelValue", "rule"]))])) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), _ctx.rule.inputType === 'checkbox' ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div", Bootstrap5Rulevue_type_template_id_80de1a5c_hoisted_11, [(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(true), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])(external_commonjs_vue_commonjs2_vue_root_Vue_["Fragment"], null, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["renderList"])(_ctx.rule.choices, function (choice) {
+  }, null, 8, ["modelValue", "rule"]))])) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), _ctx.rule.inputType === 'checkbox' ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div", Bootstrap5Rulevue_type_template_id_f3996682_hoisted_10, [(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(true), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])(external_commonjs_vue_commonjs2_vue_root_Vue_["Fragment"], null, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["renderList"])(_ctx.rule.choices, function (choice) {
     return Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div", {
       key: choice.value,
       class: "form-check form-check-inline"
     }, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["withDirectives"])(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("input", {
       id: 'depth' + _ctx.depth + '-' + _ctx.rule.id + '-' + _ctx.index + '-' + choice.value,
-      "onUpdate:modelValue": _cache[8] || (_cache[8] = function ($event) {
+      "onUpdate:modelValue": _cache[7] || (_cache[7] = function ($event) {
         return _ctx.query.value = $event;
       }),
       type: "checkbox",
@@ -3564,13 +3586,13 @@ function Bootstrap5Rulevue_type_template_id_80de1a5c_render(_ctx, _cache, $props
       class: "form-check-label",
       for: 'depth' + _ctx.depth + '-' + _ctx.rule.id + '-' + _ctx.index + '-' + choice.value
     }, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])(choice.label), 9, ["for"])]);
-  }), 128))])) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), _ctx.rule.inputType === 'radio' ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div", Bootstrap5Rulevue_type_template_id_80de1a5c_hoisted_12, [(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(true), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])(external_commonjs_vue_commonjs2_vue_root_Vue_["Fragment"], null, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["renderList"])(_ctx.rule.choices, function (choice) {
+  }), 128))])) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), _ctx.rule.inputType === 'radio' ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div", Bootstrap5Rulevue_type_template_id_f3996682_hoisted_11, [(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(true), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])(external_commonjs_vue_commonjs2_vue_root_Vue_["Fragment"], null, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["renderList"])(_ctx.rule.choices, function (choice) {
     return Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div", {
       key: choice.value,
       class: "form-check form-check-inline"
     }, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["withDirectives"])(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("input", {
       id: 'depth' + _ctx.depth + '-' + _ctx.rule.id + '-' + _ctx.index + '-' + choice.value,
-      "onUpdate:modelValue": _cache[9] || (_cache[9] = function ($event) {
+      "onUpdate:modelValue": _cache[8] || (_cache[8] = function ($event) {
         return _ctx.query.value = $event;
       }),
       name: 'depth' + _ctx.depth + '-' + _ctx.rule.id + '-' + _ctx.index,
@@ -3581,8 +3603,8 @@ function Bootstrap5Rulevue_type_template_id_80de1a5c_render(_ctx, _cache, $props
       class: "form-check-label",
       for: 'depth' + _ctx.depth + '-' + _ctx.rule.id + '-' + _ctx.index + '-' + choice.value
     }, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])(choice.label), 9, ["for"])]);
-  }), 128))])) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), _ctx.rule.inputType === 'select' && !_ctx.hasOptionGroups ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div", _hoisted_13, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["withDirectives"])(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("select", {
-    "onUpdate:modelValue": _cache[10] || (_cache[10] = function ($event) {
+  }), 128))])) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), _ctx.rule.inputType === 'select' && !_ctx.hasOptionGroups ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div", Bootstrap5Rulevue_type_template_id_f3996682_hoisted_12, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["withDirectives"])(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("select", {
+    "onUpdate:modelValue": _cache[9] || (_cache[9] = function ($event) {
       return _ctx.query.value = $event;
     }),
     class: "form-select",
@@ -3592,8 +3614,8 @@ function Bootstrap5Rulevue_type_template_id_80de1a5c_render(_ctx, _cache, $props
       key: option.value,
       value: option.value
     }, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])(option.label), 9, ["value"]);
-  }), 128))], 8, ["multiple"]), [[external_commonjs_vue_commonjs2_vue_root_Vue_["vModelSelect"], _ctx.query.value]])])) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), _ctx.rule.inputType === 'select' && _ctx.hasOptionGroups ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div", _hoisted_14, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["withDirectives"])(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("select", {
-    "onUpdate:modelValue": _cache[11] || (_cache[11] = function ($event) {
+  }), 128))], 8, ["multiple"]), [[external_commonjs_vue_commonjs2_vue_root_Vue_["vModelSelect"], _ctx.query.value]])])) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), _ctx.rule.inputType === 'select' && _ctx.hasOptionGroups ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div", _hoisted_13, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["withDirectives"])(Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("select", {
+    "onUpdate:modelValue": _cache[10] || (_cache[10] = function ($event) {
       return _ctx.query.value = $event;
     }),
     class: "form-select",
@@ -3608,18 +3630,25 @@ function Bootstrap5Rulevue_type_template_id_80de1a5c_render(_ctx, _cache, $props
         value: sub_option.value
       }, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])(sub_option.label), 9, ["value"]);
     }), 128))], 8, ["label"]);
-  }), 128))], 8, ["multiple"]), [[external_commonjs_vue_commonjs2_vue_root_Vue_["vModelSelect"], _ctx.query.value]])])) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true)])]);
+  }), 128))], 8, ["multiple"]), [[external_commonjs_vue_commonjs2_vue_root_Vue_["vModelSelect"], _ctx.query.value]])])) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("div", _hoisted_14, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("button", {
+    type: "button",
+    class: "close ms-auto btn",
+    onClick: _cache[11] || (_cache[11] = function () {
+      return _ctx.remove && _ctx.remove.apply(_ctx, arguments);
+    }),
+    innerHTML: _ctx.labels.removeRule
+  }, null, 8, ["innerHTML"])])])]);
 }
-// CONCATENATED MODULE: ./src/layouts/Bootstrap5/Bootstrap5Rule.vue?vue&type=template&id=80de1a5c
+// CONCATENATED MODULE: ./src/layouts/Bootstrap5/Bootstrap5Rule.vue?vue&type=template&id=f3996682
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/vue-loader-v16/dist/templateLoader.js??ref--6!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader-v16/dist??ref--0-1!./src/components/QueryBuilderRule.vue?vue&type=template&id=1b3c83f0
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/templateLoader.js??ref--6!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/components/QueryBuilderRule.vue?vue&type=template&id=1b3c83f0
 
 function QueryBuilderRulevue_type_template_id_1b3c83f0_render(_ctx, _cache, $props, $setup, $data, $options) {
   return Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div");
 }
 // CONCATENATED MODULE: ./src/components/QueryBuilderRule.vue?vue&type=template&id=1b3c83f0
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader-v16/dist??ref--0-1!./src/components/QueryBuilderRule.vue?vue&type=script&lang=js
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/components/QueryBuilderRule.vue?vue&type=script&lang=js
 
 /* harmony default export */ var QueryBuilderRulevue_type_script_lang_js = ({
   // eslint-disable-next-line vue/require-prop-types
@@ -3699,10 +3728,12 @@ function QueryBuilderRulevue_type_template_id_1b3c83f0_render(_ctx, _cache, $pro
 
 
 
-QueryBuilderRulevue_type_script_lang_js.render = QueryBuilderRulevue_type_template_id_1b3c83f0_render
 
-/* harmony default export */ var QueryBuilderRule = (QueryBuilderRulevue_type_script_lang_js);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader-v16/dist??ref--0-1!./src/layouts/Bootstrap5/Bootstrap5Rule.vue?vue&type=script&lang=js
+
+const QueryBuilderRule_exports_ = /*#__PURE__*/exportHelper_default()(QueryBuilderRulevue_type_script_lang_js, [['render',QueryBuilderRulevue_type_template_id_1b3c83f0_render]])
+
+/* harmony default export */ var QueryBuilderRule = (QueryBuilderRule_exports_);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/layouts/Bootstrap5/Bootstrap5Rule.vue?vue&type=script&lang=js
 
 /* harmony default export */ var Bootstrap5Rulevue_type_script_lang_js = ({
   extends: QueryBuilderRule
@@ -3713,10 +3744,12 @@ QueryBuilderRulevue_type_script_lang_js.render = QueryBuilderRulevue_type_templa
 
 
 
-Bootstrap5Rulevue_type_script_lang_js.render = Bootstrap5Rulevue_type_template_id_80de1a5c_render
 
-/* harmony default export */ var Bootstrap5Rule = (Bootstrap5Rulevue_type_script_lang_js);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader-v16/dist??ref--0-1!./src/VueQueryBuilder.vue?vue&type=script&lang=js
+
+const Bootstrap5Rule_exports_ = /*#__PURE__*/exportHelper_default()(Bootstrap5Rulevue_type_script_lang_js, [['render',Bootstrap5Rulevue_type_template_id_f3996682_render]])
+
+/* harmony default export */ var Bootstrap5Rule = (Bootstrap5Rule_exports_);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/VueQueryBuilder.vue?vue&type=script&lang=js
 
 
 
@@ -3876,9 +3909,11 @@ var defaultLabels = {
 
 
 
-VueQueryBuildervue_type_script_lang_js.render = render
 
-/* harmony default export */ var VueQueryBuilder = (VueQueryBuildervue_type_script_lang_js);
+
+const VueQueryBuilder_exports_ = /*#__PURE__*/exportHelper_default()(VueQueryBuildervue_type_script_lang_js, [['render',render]])
+
+/* harmony default export */ var VueQueryBuilder = (VueQueryBuilder_exports_);
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
 
 

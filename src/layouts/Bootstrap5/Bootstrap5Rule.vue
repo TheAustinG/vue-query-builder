@@ -2,21 +2,13 @@
   <!-- eslint-disable vue/no-v-html -->
   <div class="vqb-rule card">
     <div class="row gy-2 gx-3 align-items-center">
-      <!-- Remove rule button -->
-      <div class="col-auto d-flex">
-        <button
-          type="button"
-          class="close ml-auto btn"
-          @click="remove"
-          v-html="labels.removeRule"
-        ></button>
-      </div>
+      
 
       <label class="col-auto">{{ rule.label }}</label>
 
       <div class="col-auto" v-if="typeof rule.operands !== 'undefined'">
         <!-- List of operands (optional) -->
-        <select v-model="query.operand" class="form-select mr-2">
+        <select v-model="query.operand" class="form-select me-2">
           <option v-for="operand in rule.operands" :key="operand">
             {{ operand }}
           </option>
@@ -30,7 +22,7 @@
           typeof rule.operators !== 'undefined' && rule.operators.length > 1
         "
       >
-        <select v-model="query.operator" class="form-select mr-2">
+        <select v-model="query.operator" class="form-select me-2">
           <option
             v-for="operator in rule.operators"
             :key="operator"
@@ -165,6 +157,16 @@
             </option>
           </optgroup>
         </select>
+      </div>
+
+      <!-- Remove rule button -->
+      <div class="col-auto d-flex">
+        <button
+          type="button"
+          class="close ms-auto btn"
+          @click="remove"
+          v-html="labels.removeRule"
+        ></button>
       </div>
     </div>
   </div>
