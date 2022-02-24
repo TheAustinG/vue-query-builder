@@ -163,7 +163,7 @@
       <div class="col-auto d-flex">
         <button
           type="button"
-          class="close ms-auto btn"
+          class="btn-close btn-sm"
           @click="remove"
           v-html="labels.removeRule"
         ></button>

@@ -26,7 +26,7 @@
         <div class="col-auto" v-if="depth > 1">
           <button
             type="button"
-            class="close ms-auto btn"
+            class="btn-close btn-small"
             @click="remove"
             v-html="labels.removeGroup"
           ></button>
