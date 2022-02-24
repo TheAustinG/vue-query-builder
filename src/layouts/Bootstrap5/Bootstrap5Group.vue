@@ -28,7 +28,6 @@
             type="button"
             class="btn-close btn-small"
             @click="remove"
-            v-html="labels.removeGroup"
           ></button>
         </div>
       </div>

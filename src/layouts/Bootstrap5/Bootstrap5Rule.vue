@@ -165,7 +165,6 @@
           type="button"
           class="btn-close btn-sm"
           @click="remove"
-          v-html="labels.removeRule"
         ></button>
       </div>
     </div>
