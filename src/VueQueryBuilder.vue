@@ -151,32 +151,31 @@ export default {
     },
   },
 
-  watch: {
-
-    query: {
-      handler(newQuery) {
+  mounted() {
+    this.$watch(
+      "query",
+      (newQuery) => {
         if (JSON.stringify(newQuery) !== JSON.stringify(this.value)) {
-          this.$emit("update:modelValue", deepClone(newQuery));
+          this.$emit("update:query", deepClone(newQuery));
         }
       },
-      deep: true
-    },
+      {
+        deep: true,
+      }
+    );
 
-    value: {
-      handler(newValue) {
-        console.log(newValue);
-        console.log(this.query);
+    this.$watch(
+      "value",
+      (newValue) => {
         if (JSON.stringify(newValue) !== JSON.stringify(this.query)) {
           this.query = deepClone(newValue);
         }
       },
-      immediate: true,
-      deep: true
-    }
+      {
+        deep: true,
+      }
+    );
 
-  },
-
-  mounted() {
     console.log(this.value);
     if (typeof this.value !== "undefined") {
       this.query = Object.assign(this.query, this.value);
