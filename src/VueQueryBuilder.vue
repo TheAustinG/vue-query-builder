@@ -1,7 +1,7 @@
 <template>
   <div class="vue-query-builder">
     <slot v-bind="vqbProps">
-      <query-builder-group v-bind="vqbProps" v-model:query="query" />
+      <query-builder-group v-bind="vqbProps" v-model="query" />
     </slot>
   </div>
 </template>
@@ -156,7 +156,7 @@ export default {
       "query",
       (newQuery) => {
         if (JSON.stringify(newQuery) !== JSON.stringify(this.modelValue)) {
-          this.$emit("update:query", deepClone(newQuery));
+          this.$emit("update:modelValue", deepClone(newQuery));
         }
       },
       {
