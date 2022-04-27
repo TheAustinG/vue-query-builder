@@ -54,7 +54,7 @@ export default {
       type: Object,
       default: QueryBuilderRule,
     },
-    value: Object,
+    modelValue: Object,
   },
 
   data() {
@@ -155,7 +155,7 @@ export default {
     this.$watch(
       "query",
       (newQuery) => {
-        if (JSON.stringify(newQuery) !== JSON.stringify(this.value)) {
+        if (JSON.stringify(newQuery) !== JSON.stringify(this.modelValue)) {
           this.$emit("update:query", deepClone(newQuery));
         }
       },
@@ -165,7 +165,7 @@ export default {
     );
 
     this.$watch(
-      "value",
+      "modelValue",
       (newValue) => {
         if (JSON.stringify(newValue) !== JSON.stringify(this.query)) {
           this.query = deepClone(newValue);
@@ -176,9 +176,9 @@ export default {
       }
     );
 
-    console.log(this.value);
-    if (typeof this.value !== "undefined") {
-      this.query = Object.assign(this.query, this.value);
+    console.log(this.modelValue);
+    if (typeof this.modelValue !== "undefined") {
+      this.query = Object.assign(this.query, this.modelValue);
     }
   },
 };

@@ -3072,7 +3072,7 @@ if (typeof window !== 'undefined') {
 // EXTERNAL MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
 var external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__("8bbf");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/templateLoader.js??ref--6!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/VueQueryBuilder.vue?vue&type=template&id=3dd22f12
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/templateLoader.js??ref--6!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/VueQueryBuilder.vue?vue&type=template&id=69c6c4de
 
 var _hoisted_1 = {
   class: "vue-query-builder"
@@ -3089,7 +3089,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     }), null, 16, ["query"])];
   })]);
 }
-// CONCATENATED MODULE: ./src/VueQueryBuilder.vue?vue&type=template&id=3dd22f12
+// CONCATENATED MODULE: ./src/VueQueryBuilder.vue?vue&type=template&id=69c6c4de
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.number.constructor.js
 var es_number_constructor = __webpack_require__("a9e3");
@@ -3806,7 +3806,7 @@ var defaultLabels = {
       type: Object,
       default: Bootstrap5Rule
     },
-    value: Object
+    modelValue: Object
   },
   data: function data() {
     return {
@@ -3891,23 +3891,23 @@ var defaultLabels = {
     var _this = this;
 
     this.$watch("query", function (newQuery) {
-      if (JSON.stringify(newQuery) !== JSON.stringify(_this.value)) {
+      if (JSON.stringify(newQuery) !== JSON.stringify(_this.modelValue)) {
         _this.$emit("update:query", utilities(newQuery));
       }
     }, {
       deep: true
     });
-    this.$watch("value", function (newValue) {
+    this.$watch("modelValue", function (newValue) {
       if (JSON.stringify(newValue) !== JSON.stringify(_this.query)) {
         _this.query = utilities(newValue);
       }
     }, {
       deep: true
     });
-    console.log(this.value);
+    console.log(this.modelValue);
 
-    if (typeof this.value !== "undefined") {
-      this.query = Object.assign(this.query, this.value);
+    if (typeof this.modelValue !== "undefined") {
+      this.query = Object.assign(this.query, this.modelValue);
     }
   }
 });
