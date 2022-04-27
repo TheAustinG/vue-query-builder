@@ -164,20 +164,21 @@ export default {
 
     value: {
       handler(newValue) {
+        console.log(newValue);
+        console.log(this.query);
         if (JSON.stringify(newValue) !== JSON.stringify(this.query)) {
           this.query = deepClone(newValue);
         }
       },
+      immediate: true,
       deep: true
     }
-    
+
   },
 
   mounted() {
     if (typeof this.value !== "undefined") {
-      console.log(this.value);
       this.query = Object.assign(this.query, this.value);
-      console.log(this.query);
     }
   },
 };
