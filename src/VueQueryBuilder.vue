@@ -1,7 +1,7 @@
 <template>
   <div class="vue-query-builder">
     <slot v-bind="vqbProps">
-      <query-builder-group v-bind="vqbProps" v-model="query" />
+      <query-builder-group v-bind="vqbProps" v-model:query="query" />
     </slot>
   </div>
 </template>

@@ -72,6 +72,7 @@ export default {
       this.$emit("child-deletion-requested", this.index);
     },
     updateQuery(value) {
+      console.log(value);
       let updated_query = deepClone(this.query);
       updated_query.value = value;
       this.$emit("update:modelValue", updated_query);
