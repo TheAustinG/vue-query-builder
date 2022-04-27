@@ -63,9 +63,7 @@ export default {
     },
 
     addRule() {
-      console.log(1);
       let updated_query = deepClone(this.query);
-      console.log(2);
       let child = {
         type: "query-builder-rule",
         query: {
@@ -78,18 +76,12 @@ export default {
           value: null,
         },
       };
-      console.log(3);
       // A bit hacky, but `v-model` on `select` requires an array.
       if (this.ruleById(child.query.rule).type === "multi-select") {
-        console.log(4);
         child.query.value = [];
-        console.log(5);
       }
-      console.log(6);
       updated_query.children.push(child);
-      console.log(7);
-      this.$emit("update:query", updated_query);
-      console.log(8);
+      this.$emit("update:modelValue", updated_query);
     },
 
     addGroup() {
@@ -102,7 +94,7 @@ export default {
             children: [],
           },
         });
-        this.$emit("update:query", updated_query);
+        this.$emit("update:modelValue", updated_query);
       }
     },
 
@@ -113,7 +105,7 @@ export default {
     removeChild(index) {
       let updated_query = deepClone(this.query);
       updated_query.children.splice(index, 1);
-      this.$emit("update:query", updated_query);
+      this.$emit("update:modelValue", updated_query);
     },
     updateRule: function (x) {
       const id = x.target.selectedOptions[0].value;

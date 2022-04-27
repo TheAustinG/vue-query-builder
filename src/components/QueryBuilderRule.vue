@@ -63,7 +63,7 @@ export default {
         }
       }
 
-      this.$emit("update:query", updated_query);
+      this.$emit("update:modelValue", updated_query);
     }
   },
 
@@ -72,10 +72,9 @@ export default {
       this.$emit("child-deletion-requested", this.index);
     },
     updateQuery(value) {
-      console.debug("Update query");
       let updated_query = deepClone(this.query);
       updated_query.value = value;
-      this.$emit("update:query", updated_query);
+      this.$emit("update:modelValue", updated_query);
     },
   },
 };
