@@ -81,8 +81,6 @@ export default {
         child.query.value = [];
       }
       updated_query.children.push(child);
-      console.log(child);
-      console.log(updated_query);
       this.$emit("update:query", updated_query);
     },
 

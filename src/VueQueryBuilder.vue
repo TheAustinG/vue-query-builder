@@ -177,7 +177,9 @@ export default {
     );
 
     if (typeof this.value !== "undefined") {
+      console.log(this.value);
       this.query = Object.assign(this.query, this.value);
+      console.log(this.query);
     }
   },
 };
