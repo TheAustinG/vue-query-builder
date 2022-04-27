@@ -177,6 +177,7 @@ export default {
   },
 
   mounted() {
+    console.log(this.value);
     if (typeof this.value !== "undefined") {
       this.query = Object.assign(this.query, this.value);
     }
