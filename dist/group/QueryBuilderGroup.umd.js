@@ -2919,12 +2919,12 @@ if (typeof window !== 'undefined') {
 // EXTERNAL MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
 var external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__("8bbf");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/templateLoader.js??ref--6!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/components/QueryBuilderGroup.vue?vue&type=template&id=12e55924
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/templateLoader.js??ref--6!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/components/QueryBuilderGroup.vue?vue&type=template&id=5557ffe6
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createBlock"])("div");
 }
-// CONCATENATED MODULE: ./src/components/QueryBuilderGroup.vue?vue&type=template&id=12e55924
+// CONCATENATED MODULE: ./src/components/QueryBuilderGroup.vue?vue&type=template&id=5557ffe6
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.number.constructor.js
 var es_number_constructor = __webpack_require__("a9e3");
@@ -3125,9 +3125,7 @@ const __exports__ = /*#__PURE__*/exportHelper_default()(QueryBuilderChildrenvue_
       return rule;
     },
     addRule: function addRule() {
-      console.log(1);
       var updated_query = utilities(this.query);
-      console.log(2);
       var child = {
         type: "query-builder-rule",
         query: {
@@ -3136,20 +3134,14 @@ const __exports__ = /*#__PURE__*/exportHelper_default()(QueryBuilderChildrenvue_
           operand: typeof this.selectedRule.operands === "undefined" ? this.selectedRule.label : this.selectedRule.operands[0],
           value: null
         }
-      };
-      console.log(3); // A bit hacky, but `v-model` on `select` requires an array.
+      }; // A bit hacky, but `v-model` on `select` requires an array.
 
       if (this.ruleById(child.query.rule).type === "multi-select") {
-        console.log(4);
         child.query.value = [];
-        console.log(5);
       }
 
-      console.log(6);
       updated_query.children.push(child);
-      console.log(7);
-      this.$emit("update:query", updated_query);
-      console.log(8);
+      this.$emit("update:modelValue", updated_query);
     },
     addGroup: function addGroup() {
       var updated_query = utilities(this.query);
@@ -3162,7 +3154,7 @@ const __exports__ = /*#__PURE__*/exportHelper_default()(QueryBuilderChildrenvue_
             children: []
           }
         });
-        this.$emit("update:query", updated_query);
+        this.$emit("update:modelValue", updated_query);
       }
     },
     remove: function remove() {
@@ -3171,7 +3163,7 @@ const __exports__ = /*#__PURE__*/exportHelper_default()(QueryBuilderChildrenvue_
     removeChild: function removeChild(index) {
       var updated_query = utilities(this.query);
       updated_query.children.splice(index, 1);
-      this.$emit("update:query", updated_query);
+      this.$emit("update:modelValue", updated_query);
     },
     updateRule: function updateRule(x) {
       var id = x.target.selectedOptions[0].value;
