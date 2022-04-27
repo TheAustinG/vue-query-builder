@@ -83,7 +83,7 @@ export default {
       updated_query.children.push(child);
       console.log(child);
       console.log(updated_query);
-      this.$emit("update:modelValue", updated_query);
+      this.$emit("update:query", updated_query);
     },
 
     addGroup() {
@@ -96,7 +96,7 @@ export default {
             children: [],
           },
         });
-        this.$emit("update:modelValue", updated_query);
+        this.$emit("update:query", updated_query);
       }
     },
 
@@ -107,7 +107,7 @@ export default {
     removeChild(index) {
       let updated_query = deepClone(this.query);
       updated_query.children.splice(index, 1);
-      this.$emit("update:modelValue", updated_query);
+      this.$emit("update:query", updated_query);
     },
     updateRule: function (x) {
       const id = x.target.selectedOptions[0].value;

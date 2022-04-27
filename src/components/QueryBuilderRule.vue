@@ -63,7 +63,7 @@ export default {
         }
       }
 
-      this.$emit("update:modelValue", updated_query);
+      this.$emit("update:query", updated_query);
     }
   },
 
@@ -75,7 +75,7 @@ export default {
       console.log(value);
       let updated_query = deepClone(this.query);
       updated_query.value = value;
-      this.$emit("update:modelValue", updated_query);
+      this.$emit("update:query", updated_query);
     },
   },
 };

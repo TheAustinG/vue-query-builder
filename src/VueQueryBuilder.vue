@@ -156,7 +156,7 @@ export default {
       "query",
       (newQuery) => {
         if (JSON.stringify(newQuery) !== JSON.stringify(this.value)) {
-          this.$emit("input", deepClone(newQuery));
+          this.$emit("update:modelValue", deepClone(newQuery));
         }
       },
       {
