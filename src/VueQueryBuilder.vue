@@ -176,7 +176,6 @@ export default {
       }
     );
 
-    console.log(this.modelValue);
     if (typeof this.modelValue !== "undefined") {
       this.query = Object.assign(this.query, this.modelValue);
     }
